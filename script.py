@@ -123,7 +123,7 @@ def plot_vowel_space(df_norm: pd.DataFrame, out_stem: str = "vowel_space"):
                        s=55, alpha=0.55, linewidths=0.4,
                        edgecolors="white", zorder=3)
 
-            # confidence ellipse
+            # confidence ellipse (≥3 tokens) or reference circle (1-2 tokens)
             ell_params = compute_ellipse(x, y)
             if ell_params:
                 cx, cy, w, h, angle = ell_params
@@ -133,6 +133,18 @@ def plot_vowel_space(df_norm: pd.DataFrame, out_stem: str = "vowel_space"):
                     facecolor=colour, alpha=0.12, zorder=2
                 )
                 ax.add_patch(ell)
+            elif len(x) > 0:
+                # too few points for a covariance ellipse — draw a fixed-radius
+                # reference circle so the speaker still has a visible marker.
+                # The dashed border distinguishes it from a data-driven ellipse.
+                cx, cy = np.mean(x), np.mean(y)
+                circle = mpatches.Circle(
+                    (cx, cy), radius=0.18,
+                    linewidth=1.2, linestyle="--",
+                    edgecolor=colour, facecolor=colour,
+                    alpha=0.15, zorder=2
+                )
+                ax.add_patch(circle)
 
             # centroid label
             if len(x):
@@ -192,6 +204,10 @@ def plot_vowel_space(df_norm: pd.DataFrame, out_stem: str = "vowel_space"):
                 xycoords="axes fraction", ha="center", va="center",
                 fontsize=8, color="#888888", style="italic",
                 rotation=90)
+    ax.annotate("dashed circle = reference point\n(too few tokens for ellipse)",
+                xy=(0.02, 0.02), xycoords="axes fraction",
+                fontsize=7, color="#999999", style="italic",
+                va="bottom")
 
     plt.tight_layout()
 
