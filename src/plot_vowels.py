@@ -15,9 +15,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')           # Non-interactive backend (safe for scripts)
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
 from matplotlib.patches import Ellipse
-import matplotlib.transforms as transforms
 
 
 # ---------------------------------------------------------------------------
@@ -105,8 +103,6 @@ def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
     fig.patch.set_facecolor('#FAFAFA')
     ax.set_facecolor('#F4F4F4')
 
-    legend_handles = []
-
     for vowel in VOWEL_ORDER:
         subset = df[df['vowel'] == vowel]
         if subset.empty:
@@ -137,7 +133,6 @@ def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
             edgecolors='white',
             linewidths=0.5,
             zorder=3,
-            label=f'/{vowel}/',
         )
 
         # ── 3. Centroid marker ───────────────────────────────────────────────
@@ -148,7 +143,7 @@ def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
         ax.scatter(
             cx, cy,
             color=colour,
-            s=200,
+            s=75,
             zorder=5,
             edgecolors='white',
             linewidths=1.5,
@@ -165,10 +160,6 @@ def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
             zorder=6,
         )
 
-        legend_handles.append(
-            mpatches.Patch(facecolor=colour, label=f'/{vowel}/', alpha=0.75)
-        )
-
     # ── Axis formatting (reversed to match phonetic convention) ─────────────
     ax.invert_xaxis()   # F2: high values on left (front vowels left)
     ax.invert_yaxis()   # F1: high values at top  (high vowels top)
@@ -180,14 +171,6 @@ def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
     if speaker_label is not None:
         title += f'  —  Speaker {speaker_label}'
     ax.set_title(title, fontsize=14, fontweight='bold', pad=14)
-
-    ax.legend(
-        handles=legend_handles,
-        title='Vowel',
-        loc='upper right',
-        framealpha=0.85,
-        fontsize=10,
-    )
 
     ax.grid(True, linestyle=':', linewidth=0.7, color='#BBBBBB', alpha=0.8)
     ax.tick_params(labelsize=9)

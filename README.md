@@ -20,7 +20,7 @@ pip install pandas numpy matplotlib
 ---
 
 ## Usage
-
+Navigate to the src folder (```cd ./src```), and enter:
 ```bash
 python3 script.py <csv_file> <output_name>
 ```
@@ -55,7 +55,7 @@ The CSV should be tab-separated with the following columns:
 - **Speaker** — speaker ID (currently supports single-speaker files)
 - **Vowel** — one of `a`, `e`, `i`, `o`, `u`
 - **F1 / F2** — formant values in Hz
-- **context** — ignored by the tool
+- **context** — ignored by the tool, optional inclusion
 
 ---
 
@@ -71,23 +71,10 @@ The CSV should be tab-separated with the following columns:
 
 ---
 
-## Project Structure
-
-```
-.
-├── script.py           # Entry point — argument parsing and pipeline
-├── normalise.py        # Data loading and Lobanov normalisation
-├── plot_vowels.py      # Vowel space plot with ellipses
-├── output_results.py   # Terminal and .txt output of midpoints
-└── results/            # Generated outputs (created on first run)
-```
-
----
-
 ## Acknowledgements
 
 **Libraries:** [pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), [Matplotlib](https://matplotlib.org/)
 
 **Normalisation method:** Lobanov, B. M. (1971). Classification of Russian vowels spoken by different speakers. *Journal of the Acoustical Society of America*, 49(2B), 606–608.
 
-**AI assistance:** This project was developed with the assistance of [Claude](https://claude.ai) (Anthropic), which was used to generate the Python code across all modules. Claude was used as a coding tool to implement the described functionality (data visualisation), the analysis approach and data itself was provided by the user.
+**AI assistance:** This project was developed with the assistance of [Claude](https://claude.ai) (Anthropic), which was used to generate the initial Python code across all modules. Later edits to the code were made by the user to improve presentation of data and project layout. Claude was used as a coding tool to assist in the automation of the data visualisation process, the analysis approach and data itself was provided by the user.

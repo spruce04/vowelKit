@@ -78,7 +78,7 @@ def main():
     csv_path, output_name = parse_args()
 
     # ── Step 1: Build output paths ──────────────────────────────────────────
-    results_dir = 'results'
+    results_dir = '../results'
     os.makedirs(results_dir, exist_ok=True)
 
     plot_path       = os.path.join(results_dir, f"{output_name}.png")
