@@ -22,40 +22,42 @@ pip install pandas numpy matplotlib
 ## Usage
 Navigate to the src folder (```cd ./src```), and enter:
 ```bash
-python3 script.py <csv_file> <output_name>
+python3 script.py <csv_file>
 ```
 
 **Arguments:**
 
 - `csv_file` — path to your input `.csv` file (see format below)
-- `output_name` — base name for output files (no extension needed)
 
 **Example:**
 
 ```bash
-python3 script.py my_data.csv speaker1
+python3 script.py my_data.csv
 ```
 
 This will create:
-- `results/speaker1.png` — vowel space plot
-- `results/speaker1_clustermidpoints.txt` — cluster midpoint coordinates
+- A `results/{group}/` subdirectory for each group in the data
+- `results/{speaker}.png` — vowel space plot
+- `results/{speaker}_clustermidpoints.txt` — cluster midpoint coordinates
+For each speaker in each group. It will also create:
+- `results/{speaker}.png`
 
-The `results/` folder is created automatically if it does not exist.
+The `results/` folder and all subdirectories are created automatically if they does not exist.
 
 ---
 
 ## Input Format
 
-The CSV should be tab-separated with the following columns:
+The CSV should be comma-separated with the following columns:
 
-| Speaker | Vowel | F1 | F2 | context |
-|---|---|---|---|---|
-| 1 | a | 715.15 | 1523.96 | … |
+|Group| | Speaker | Vowel | F1 | F2 | Notes |
+|test | | #1      | a     | X  | Y  | ...   |
 
-- **Speaker** — speaker ID (currently supports single-speaker files)
-- **Vowel** — one of `a`, `e`, `i`, `o`, `u`
+- **Group** - group name/ID
+- **Speaker** — speaker ID
+- **Vowel** — one of `a`, `e`, `i`, `o`, `u`. Note that as I made the application to analyse Spanish vowels, I only made it with these vowels in mind. More could be added later when I have more time.
 - **F1 / F2** — formant values in Hz
-- **context** — ignored by the tool, optional inclusion
+- **Notes** — ignored by the tool, optional inclusion
 
 ---
 
@@ -68,6 +70,8 @@ The CSV should be tab-separated with the following columns:
 - Axes oriented to phonetic convention (F2 right→left, F1 bottom→top)
 
 **Midpoints (`.txt`)** — the F1 and F2 normalised centroid coordinates for each vowel cluster, also printed to the terminal on each run.
+
+These will be outputted for each individual speaker, and an aggregate plot and midpoints will be outputted for each group.
 
 ---
 

@@ -53,8 +53,26 @@ def _confidence_ellipse(x, y, ax, n_std=2.0, **kwargs):
     **kwargs             — passed to matplotlib.patches.Ellipse
     """
     if len(x) < 3:
-        # Not enough points to estimate a covariance matrix reliably
-        return
+        #Plot a tentative circle around the 2 points if we have 2 points to plot around
+        if len(x) == 2:
+            x_arr = np.asarray(x)
+            y_arr = np.asarray(y)
+            
+            # Calculate the Euclidean distance to use as the diameter
+            distance = np.sqrt((x_arr[0] - x_arr[1])**2 + (y_arr[0] - y_arr[1])**2)
+            
+            ellipse = Ellipse(
+                xy=(np.mean(x_arr), np.mean(y_arr)),
+                width=distance,
+                height=distance,
+                angle=0,
+                **kwargs,
+            )
+            ax.add_patch(ellipse)
+            return
+        else:
+            # Not enough points to estimate a covariance matrix reliably
+            return
 
     cov = np.cov(x, y)
     # Eigendecomposition of the covariance matrix gives ellipse orientation
@@ -62,8 +80,9 @@ def _confidence_ellipse(x, y, ax, n_std=2.0, **kwargs):
     # Angle of the major axis in degrees
     angle = np.degrees(np.arctan2(*eigenvectors[:, 0][::-1]))
     # Width and height are proportional to sqrt of eigenvalues * n_std
-    width  = 2 * n_std * np.sqrt(eigenvalues[0])
-    height = 2 * n_std * np.sqrt(eigenvalues[1])
+    # Clamp to zero to guard against tiny negative values from floating-point noise
+    width  = 2 * n_std * np.sqrt(max(eigenvalues[0], 0))
+    height = 2 * n_std * np.sqrt(max(eigenvalues[1], 0))
 
     ellipse = Ellipse(
         xy=(np.mean(x), np.mean(y)),
@@ -79,7 +98,14 @@ def _confidence_ellipse(x, y, ax, n_std=2.0, **kwargs):
 # Main plotting function
 # ---------------------------------------------------------------------------
 
-def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
+def plot_vowel_space(
+    df,
+    midpoints: dict,
+    output_path: str,
+    speaker_label=None,
+    group_label=None,
+    aggregate: bool = False,
+):
     """
     Create and save the normalised vowel space plot.
 
@@ -94,10 +120,12 @@ def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
 
     Parameters
     ----------
-    df          : pd.DataFrame  — normalised data with 'vowel', 'f1_norm', 'f2_norm'
-    midpoints   : dict          — {vowel: {'f1_mid': …, 'f2_mid': …}}
-    output_path : str           — file path for the saved PNG
-    speaker_label : str|int|None — optional speaker ID for the title
+    df            : pd.DataFrame   — normalised data with 'vowel', 'f1_norm', 'f2_norm'
+    midpoints     : dict           — {vowel: {'f1_mid': …, 'f2_mid': …}}
+    output_path   : str            — file path for the saved PNG
+    speaker_label : str|int|None   — speaker ID shown in the title (individual plots)
+    group_label   : str|int|None   — group ID shown in the title
+    aggregate     : bool           — if True, labels plot as group aggregate
     """
     fig, ax = plt.subplots(figsize=(8, 7))
     fig.patch.set_facecolor('#FAFAFA')
@@ -167,9 +195,17 @@ def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
     ax.set_xlabel('F2 (Lobanov normalised)', fontsize=12, labelpad=8)
     ax.set_ylabel('F1 (Lobanov normalised)', fontsize=12, labelpad=8)
 
+    # ── Title construction ───────────────────────────────────────────────────
     title = 'Lobanov-Normalised Vowel Space'
-    if speaker_label is not None:
+    if aggregate and group_label is not None:
+        title += f'  —  Group {group_label} (aggregate)'
+    elif aggregate:
+        title += '  —  Aggregate'
+    elif speaker_label is not None and group_label is not None:
+        title += f'  —  Group {group_label}, Speaker {speaker_label}'
+    elif speaker_label is not None:
         title += f'  —  Speaker {speaker_label}'
+
     ax.set_title(title, fontsize=14, fontweight='bold', pad=14)
 
     ax.grid(True, linestyle=':', linewidth=0.7, color='#BBBBBB', alpha=0.8)
@@ -178,4 +214,4 @@ def plot_vowel_space(df, midpoints: dict, output_path: str, speaker_label=None):
     plt.tight_layout()
     plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close(fig)
-    print(f"[plot]  Saved vowel space plot  →  {output_path}")
+    print(f"[plot]   Saved vowel space plot  →  {output_path}")

@@ -1,26 +1,161 @@
-Speaker	Vowel	F1	F2	context
-1	a	715.147431	1523.963569	https://youtu.be/Z-eA395X__A?feature=shared
-1	a	532.794208	1459.36994	https://youtu.be/Z-eA395X__A?feature=shared
-1	a	619.181078	1508.554135	https://youtu.be/Z-eA395X__A?feature=shared
-1	a	619.746911	1481.800062	https://youtu.be/Z-eA395X__A?feature=shared
-1	a	553.234104	1719.49231	https://youtu.be/Z-eA395X__A?feature=shared
-1	e	443.825523	1816.283323	https://youtu.be/Z-eA395X__A?feature=shared
-1	e	358.926614	1632.730896	https://youtu.be/Z-eA395X__A?feature=shared
-1	e	381.270597	1931.530817	https://youtu.be/Z-eA395X__A?feature=shared
-1	e	407.149369	1796.079174	https://youtu.be/Z-eA395X__A?feature=shared
-1	e	444.487911	1774.54594	https://youtu.be/Z-eA395X__A?feature=shared
-1	i	315.171174	2511.522263	https://youtu.be/Z-eA395X__A?feature=shared
-1	i	348.539153	2064.799005	https://youtu.be/Z-eA395X__A?feature=shared
-1	i	276.602251	2664.293016	https://youtu.be/Z-eA395X__A?feature=shared
-1	i	292.577269	2428.651181	https://youtu.be/Z-eA395X__A?feature=shared
-1	i	339.083057	2136.568383	https://youtu.be/Z-eA395X__A?feature=shared
-1	o	458.934251	1139.979881	https://youtu.be/Z-eA395X__A?feature=shared
-1	o	376.377549	1017.231575	https://youtu.be/Z-eA395X__A?feature=shared
-1	o	472.836042	853.191503	https://youtu.be/Z-eA395X__A?feature=shared
-1	o	484.465604	819.035042	https://youtu.be/Z-eA395X__A?feature=shared
-1	o	523.020561	1131.172348	https://youtu.be/Z-eA395X__A?feature=shared
-1	u	362.684849	793.314995	https://youtu.be/Z-eA395X__A?feature=shared
-1	u	323.348769	797.414677	https://youtu.be/Z-eA395X__A?feature=shared
-1	u	421.534711	911.075776	https://youtu.be/Z-eA395X__A?feature=shared
-1	u	469.045912	882.570816	https://youtu.be/Z-eA395X__A?feature=shared
-1	u	336.094729	1052.05696	https://youtu.be/Z-eA395X__A?feature=shared
+Group,Speaker,Vowel,F1,F2,Notes
+1,1,a,715.147431,1523.963569,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,a,532.794208,1459.36994,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,a,619.181078,1508.554135,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,a,619.746911,1481.800062,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,a,553.234104,1719.49231,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,e,443.825523,1816.283323,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,e,358.926614,1632.730896,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,e,381.270597,1931.530817,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,e,407.149369,1796.079174,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,e,444.487911,1774.54594,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,i,315.171174,2511.522263,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,i,299.955664,2320.99214,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,i,276.602251,2664.293016,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,i,292.577269,2428.651181,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,i,339.083057,2136.568383,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,o,458.934251,1139.979881,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,o,376.377549,1017.231575,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,o,472.836042,853.191503,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,o,484.465604,819.035042,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,o,523.020561,1131.172348,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,u,362.684849,793.314995,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,u,323.348769,797.414677,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,u,421.534711,911.075776,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,u,469.045912,882.570816,https://youtu.be/Z-eA395X__A?feature=shared
+1,1,u,336.094729,1052.05696,https://youtu.be/Z-eA395X__A?feature=shared
+1,2,a,496.692182,1484.077944,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,a,568.713803,1418.552794,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,a,557.171777,1439.659373,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,a,530.849921,1341.594093,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,a,575.849435,1392.911233,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,e,346.981358,2026.713952,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,e,349.714094,1955.842486,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,e,388.878245,1821.120087,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,e,299.971003,1892.132404,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,e,373.541907,2069.293723,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,i,292.952593,2133.882109,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,i,272.749166,1886.255544,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,i,228.742419,2138.314044,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,i,246.11576,2207.394953,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,i,284.048922,2156.220187,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,o,274.593117,1062.835091,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,o,337.517937,1108.842587,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,o,384.780093,823.318684,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,o,297.904581,1239.564112,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,o,401.83506,1071.202905,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,u,305.215292,809.396114,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,u,218.472817,966.179012,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,u,277.727768,722.426547,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,u,360.553401,871.725853,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,2,u,301.285384,973.615432,https://www.youtube.com/watch?v=SUmc_m0gbDA
+1,3,a,664.356459,1380.830834,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,a,662.46366,1330.651689,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,a,654.239096,1135.366143,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,a,594.785221,1576.921826,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,a,712.123749,1422.310484,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,e,397.587541,1577.667901,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,e,400.003021,1664.708138,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,e,407.943684,1719.50883,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,e,358.055161,1817.810319,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,e,414.773261,2057.062088,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,i,246.552255,1979.299416,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,i,335.870807,2160.376459,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,i,346.813579,1965.078607,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,i,285.868692,2054.37356,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,i,250.783766,2203.582277,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,o,450.606593,743.703204,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,o,419.071278,1159.355026,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,o,234.128764,1001.290476,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,o,392.31388,1252.731684,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,o,316.78352,853.695555,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,u,300.31523,722.131773,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,u,266.536866,675.233208,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,u,322.65871,609.211742,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,u,261.094366,617.36093,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,3,u,254.688872,752.363038,https://www.youtube.com/watch?v=RGMI0gTnmF8
+1,4,a,643.141459,1890.614902,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,a,823.019888,1742.347975,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,a,882.235142,1465.786319,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,a,922.412071,1638.684229,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,a,755.21348,1930.437557,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,e,422.851605,2067.429749,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,e,496.235669,2364.373655,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,e,590.310084,2017.861258,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,e,490.94697,2435.798918,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,e,439.562157,2223.404865,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,i,537.600367,2690.742889,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,i,370.481445,2734.600424,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,i,484.766351,2801.750153,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,i,367.744678,2913.08632,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,i,462.586591,2762.652902,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,o,583.536598,1450.267717,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,o,545.741323,1392.344164,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,o,522.038314,1051.663603,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,o,495.267221,933.841325,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,o,541.715652,1137.69929,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,u,325.583671,1096.833099,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,u,453.786476,1023.562375,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,u,578.146306,1306.667112,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,u,403.163521,817.811199,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,4,u,411.007052,962.777431,https://youtube.com/shorts/1sgasSIyeMg?si=TGn_rqaAFVhcJYeH
+1,5,a,753.799515,1550.494233,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,a,699.860001,1461.340505,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,a,769.691783,1470.61293,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,a,741.222399,1756.263142,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,a,635.54923,1787.829574,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,e,531.102574,2314.300334,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,e,443.8791,2116.934751,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,e,419.393825,2404.570363,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,e,428.981803,2392.214985,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,e,414.615985,2094.658615,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,i,321.425979,2659.812857,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,i,404.842905,2824.259889,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,i,375.581315,2700.363048,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,i,369.130632,2756.517109,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,i,354.946307,2693.242455,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,o,426.477291,1287.565033,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,o,470.332609,1383.291866,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,o,522.455084,1253.322033,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,o,408.704508,1457.559061,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,o,468.957218,1195.289444,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,u,372.931687,1100.431642,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,u,398.406659,1336.584522,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,u,291.122657,1132.709161,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,u,371.488903,1206.345841,https://www.youtube.com/watch?v=It9_GP5yIQo
+1,5,u,394.727552,1283.392454,https://www.youtube.com/watch?v=It9_GP5yIQo
+2a,1,a,630.276701,1498.29324,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,a,684.497962,1372.22033,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,a,788.307102,1473.723065,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,a,681.342052,1481.170584,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,a,559.800027,1134.734924,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,e,374.211368,1758.756089,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,e,426.188974,1695.244079,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,e,376.476908,1564.702238,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,e,381.475641,1806.757941,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,e,421.035577,1648.312543,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,i,297.461621,2084.546512,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,i,257.255888,2202.466695,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,i,281.72952,2227.782677,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,i,268.720706,2363.275402,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,i,237.546944,2248.423133,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,o,410.781329,914.614502,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,o,437.210858,1312.219498,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,o,389.35365,1016.152235,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,o,435.00381,841.733342,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,o,436.549841,1080.043222,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,u,267.532369,1319.381461,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,u,237.273879,1220.644707,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,u,269.679255,987.629404,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,u,349.486156,1097.622794,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+2a,1,u,371.925138,986.418757,https://www.tiktok.com/@paluleos2/video/7639086704330083605
+Baseline,Male Baseline,a,612,1356,"Chládková, Escudero, and Boersma 2011"
+Baseline,Male Baseline,e,455,1929,"Chládková, Escudero, and Boersma 2012"
+Baseline,Male Baseline,i,323,2186,"Chládková, Escudero, and Boersma 2013"
+Baseline,Male Baseline,o,483,942,"Chládková, Escudero, and Boersma 2014"
+Baseline,Male Baseline,u,371,824,"Chládková, Escudero, and Boersma 2015"
+Baseline,Female Baseline,a,762,1610,"Chládková, Escudero, and Boersma 2016"
+Baseline,Female Baseline,e,525,2223,"Chládková, Escudero, and Boersma 2017"
+Baseline,Female Baseline,i,400,2669,"Chládková, Escudero, and Boersma 2018"
+Baseline,Female Baseline,o,580,1121,"Chládková, Escudero, and Boersma 2019"
+Baseline,Female Baseline,u,430,954,"Chládková, Escudero, and Boersma 2020"

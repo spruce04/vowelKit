@@ -2,8 +2,7 @@
 output_results.py
 -----------------
 Handles writing the cluster midpoint data to:
-  1. The terminal (stdout)
-  2. A plaintext .txt file
+  1. A plaintext .txt file
 
 Kept separate from normalise.py and plot_vowels.py so that each file
 has a single clear responsibility.
@@ -14,39 +13,6 @@ import os
 
 # Consistent ordering for the five vowels
 VOWEL_ORDER = ['a', 'e', 'i', 'o', 'u']
-
-
-# ---------------------------------------------------------------------------
-# Terminal output
-# ---------------------------------------------------------------------------
-
-def print_midpoints(midpoints: dict, speaker_label=None):
-    """
-    Print a formatted summary of cluster midpoints to the terminal.
-
-    Parameters
-    ----------
-    midpoints    : dict        — {vowel: {'f1_mid': float, 'f2_mid': float}}
-    speaker_label : str|None  — optional speaker ID for the header
-    """
-    header = "═" * 46
-    print("\n" + header)
-    if speaker_label is not None:
-        print(f"  Vowel Cluster Midpoints  —  Speaker {speaker_label}")
-    else:
-        print("  Vowel Cluster Midpoints (Lobanov normalised)")
-    print(header)
-    print(f"  {'Vowel':<10}  {'F1_norm (mid)':>15}  {'F2_norm (mid)':>15}")
-    print("  " + "─" * 42)
-
-    for vowel in VOWEL_ORDER:
-        if vowel not in midpoints:
-            continue
-        f1 = midpoints[vowel]['f1_mid']
-        f2 = midpoints[vowel]['f2_mid']
-        print(f"  /{vowel}/ {'':<6}  {f1:>15.6f}  {f2:>15.6f}")
-
-    print(header + "\n")
 
 
 # ---------------------------------------------------------------------------
