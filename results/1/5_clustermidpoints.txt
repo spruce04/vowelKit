@@ -1,0 +1,20 @@
+Vowel Cluster Midpoints — Lobanov Normalised
+Speaker: 5
+
+Vowel         F1_norm_midpoint    F2_norm_midpoint
+──────────────────────────────────────────────────
+/a/                   1.785243           -0.363741
+/e/                  -0.172391            0.728747
+/i/                  -0.764570            1.494887
+/o/                  -0.087665           -0.844174
+/u/                  -0.760617           -1.015718
+
+Note: values are Lobanov (z-score) normalised.
+F1 low  → high vowel  |  F1 high  → low vowel
+F2 high → front vowel |  F2 low   → back vowel
+--
+Distance between centroids of e and i:           0.968321
+Lesser distance indicates higher degree of motosity
+--
+Distance between centroids of o and u:           0.694472
+Lesser distance indicates higher degree of motosity

@@ -9,10 +9,24 @@ has a single clear responsibility.
 """
 
 import os
+import math
 
 
 # Consistent ordering for the five vowels
 VOWEL_ORDER = ['a', 'e', 'i', 'o', 'u']
+#For the calculation of Euclidean Distance
+VOWEL_PAIRS = [('e', 'i'), ('o', 'u')]
+
+#Helper function to calculate Euclidean Distance
+#Params: An (x,y) set of points for the midpoint of a and b
+def calculate_distance(a_mid, b_mid):
+    diff_one = a_mid['f1_mid'] - b_mid['f1_mid']
+    diff_two = a_mid['f2_mid'] - b_mid['f2_mid']
+    #Square both 
+    diff_one *= diff_one
+    diff_two *= diff_two
+    return math.sqrt(diff_one + diff_two)
+
 
 
 # ---------------------------------------------------------------------------
@@ -51,6 +65,17 @@ def save_midpoints_txt(midpoints: dict, output_path: str, speaker_label=None):
     lines.append("Note: values are Lobanov (z-score) normalised.")
     lines.append("F1 low  → high vowel  |  F1 high  → low vowel")
     lines.append("F2 high → front vowel |  F2 low   → back vowel")
+
+    #Calculate the Euclidean Distance between the vowels /e/ and /i/, and /o/ and /u/
+    for pair in VOWEL_PAIRS:
+        v1, v2 = pair
+        a = midpoints[v1]
+        b = midpoints[v2]
+        distance = calculate_distance(a, b)
+        lines.append(f"--")
+        lines.append(f"Distance between centroids of {v1} and {v2}: {distance:>18.6f}")
+        lines.append(f"Lesser distance indicates higher degree of motosity")
+
 
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines) + '\n')
