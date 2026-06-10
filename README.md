@@ -71,8 +71,8 @@ The CSV should be comma-separated with the following columns:
 
 **Midpoints (`.txt`)** — the F1 and F2 normalised centroid coordinates for each vowel cluster, also printed to the terminal on each run.
 
-These will be outputted for each individual speaker, and an aggregate plot and midpoints will be outputted for each group.
-
+- These will be outputted for each individual speaker, and an aggregate plot and midpoints will be outputted for each group.
+- A preview of the output given the current data.csv file can be viewed in the ```results/``` folder
 ---
 
 ## Acknowledgements
